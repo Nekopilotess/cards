@@ -1,0 +1,10 @@
+{% extends 'cards/base.html' %}
+
+{% block content %}
+
+  <p>Card: {{ card }}</p>
+
+    <p>{{ card.name }}</p>
+    <p>{{ card.body|linebreaks }}</p>
+
+{% endblock content %}

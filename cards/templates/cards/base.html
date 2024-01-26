@@ -1,0 +1,14 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<!-- <link href="{% static "sca/sca.css" %}" rel="stylesheet">-->
+</head>
+
+<p>
+    <a href="{% url 'cards:index' %}">Pandora Help Desk Cards</a> -
+    <a href="{% url 'cards:cards' %}">Cards</a> -
+</p>
+
+{% block content %}{% endblock content %}
+</html>

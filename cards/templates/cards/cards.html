@@ -1,0 +1,17 @@
+{% extends 'cards/base.html' %}
+
+{% block title %}Cards{% endblock %}
+
+{% block content %}
+<ul>
+    {% for card in cards %}
+      <li>
+        <a href="{% url 'cards:card' card.id %}">{{ card }}</a>
+	  </li>
+    {% empty %}
+      <li>No cards have been added yet.</li>
+    {% endfor %}
+  </ul>
+
+  <a href="{% url 'cards:card_add' %}">Add a new card</a>
+{% endblock content %}
